@@ -64,11 +64,9 @@ h1 {
 h2 {
   font-size: 46px;
   line-height: 1.2;
-  color: var(--color-black);
 }
 h3 {
   font-size: 32px;
-  color: var(--color-black);
 }
 h4 {
   font-size: 28px;
@@ -102,12 +100,29 @@ p {
   }
 }
 
+.mt-70{
+  margin-top: 70px;
+}
+  
+.mb-90{
+  margin-bottom: 90px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+  
+.padtobo-80{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 /*** Spinner End ***/
 
 .back-to-top {
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 69px;
   display: flex;
   width: 45px;
   height: 45px;
@@ -393,6 +408,51 @@ nav {
   opacity: 0;
 }
 
+
+#footer-bar {
+  /* margin-top: -7px; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  gap: 28px;
+  right: 0;
+  z-index: 98;
+  background-color: rgba(249, 249, 249, 0.98);
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.06);
+  min-height: 60px;
+  display: none;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: all 300ms ease;
+}
+
+#footer-bar a {
+  color: #1f1f1f;
+  padding-top: 12px;
+  position: relative;
+  /*flex: 1 1 auto;*/
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-bar a i {
+  margin-top: -3px;
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+
+@media (max-width: 575px) {
+  #footer-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+  }
+
+}
 /* ======================================= Navbar  ====================================================================== */
 /* ======================================= Carousel ==================================================================*/
 
@@ -755,9 +815,10 @@ nav {
     font-size: 3.4rem;
   }
   
-  .section--title {
+  .section--title, .section_title {
     color: var(--color-dark-1);
   }
+
   
   .about .section-title {
     margin-bottom: 20px;
@@ -1655,8 +1716,7 @@ nav {
     margin-top: -70px;
     margin-bottom: 100px;
     position: relative;
-    z-index: 222;
-  
+    /* z-index: 222; */
   }
   
   .contact-box h2 {
@@ -1992,13 +2052,13 @@ nav {
   }
   
   .blog_info {
-    background: #f9f9f9;
-    padding: 30px 30px;
-    z-index: 1;
-    border: 1px solid #f3f2f2;
-    position: relative;
-    margin: -50px 20px 20px 20px;
-    border-radius: 10px;
+    /* background: #f9f9f9; */
+    /* padding: 30px 30px; */
+    /* z-index: 1; */
+    /* border: 1px solid #f3f2f2; */
+    /* position: relative; */
+    /* margin: -50px 20px 20px 20px; */
+    /* border-radius: 10px; */
   }
   
   .blog-meta-box {
@@ -2310,6 +2370,7 @@ blockquote:before {
     gap: 16px;
     flex-direction: column;
   }
+
   }
   
   @media (min-width: 576px) and (max-width: 767.98px) {
@@ -2327,6 +2388,7 @@ blockquote:before {
     gap: 16px;
     flex-direction: column;
   }
+
   }
 /* <!--=========================================== Blog Details Start ============================================= --> */
 /* <!--=========================================== Blog Details Start ============================================= --> */
@@ -2467,7 +2529,6 @@ blockquote:before {
         } 
     }
     
-    
     @keyframes leftToRight {
       0% {
         -webkit-transform: translateY(0px);
@@ -2516,18 +2577,12 @@ blockquote:before {
     position: relative;
     z-index: 2;
   }
-  /* .padtobo-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-   */
+
 /* ===============================================  tours  =====================================================*/
 /* ===============================================  tours  =====================================================*/
 
 /* -=========================================== tour-details Start =============================================  */
 /* -=========================================== tour-details Start =============================================  */
-
-
 
 .padtop-70 {
     margin-top:70px;
@@ -2566,14 +2621,6 @@ blockquote:before {
     border-radius: 3px;
   }
   
-  /* .tour-details-package-title {
-    background: var(--color-accent-1);
-    text-align: center;
-    padding: 20px;
-    border-radius: 20px 20px 0 0;
-    color: var(--second-color);
-  } */
-  
   .tour-details-package-box {
     width: 100%;
     padding-bottom: 20px;
@@ -2592,10 +2639,11 @@ blockquote:before {
   .tour-details-package-box label {
     position: absolute;
     z-index: 2;
-    top: -0.8rem;
+    top: -1.1rem;
     left: 1rem;
     padding: 2px;
     color: var(--second-color);
+    font-size: 22px;
   }
   
   .tour-details-package-box label::before {
@@ -3004,7 +3052,6 @@ blockquote:before {
     z-index: -2;
 }
 
-
 .p-list p{
     color: var(--para-color);
     -webkit-hyphens: auto;
@@ -3027,3 +3074,54 @@ blockquote:before {
 
 /* -=========================================== tour-details Start =============================================  */
 /* -=========================================== tour-details Start =============================================  */
+
+@media (max-width: 575px) {
+
+  .section--title span {
+    font-size: 40px;
+}
+.section--title h3 {
+  font-size: 25px;
+}
+.inteagram-img a img {
+  margin: 3px 1px;
+  width: 165px;
+  height: 96px;
+  object-fit: cover;
+}
+.tour_details_top_bottom {
+  flex-direction: column;
+}
+.tour-heading h2 {
+    font-size: 29px;
+}
+.tour-include-exclude-table {
+  flex-direction: column;
+}
+.tour-exclude {
+  border-top: 2px dashed #ff681a;
+  border-radius: 16px;
+}
+.single-blog .thumb img {
+  width: 100%;
+}
+
+.tour-details-package-content, .tour-details-info-box, .tour-details-deals-box {
+  padding: 1px;
+}
+
+.tour-details-right.blog-side {
+  padding: 1px;
+}
+
+}
+
+.subcategory_info {
+  background: #f9f9f9;
+  padding: 30px 30px;
+  z-index: 1;
+  border: 1px solid #f3f2f2;
+  position: relative;
+  margin: -50px 20px 20px 20px;
+  border-radius: 10px;
+}
