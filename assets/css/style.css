@@ -2261,6 +2261,8 @@ nav {
 
 .tour-side-item img {
     border-radius: 5px;
+    height: 243px;
+    width: 365px;
 }
 .tour-side-price {
     background: var(--color-white);
@@ -2639,11 +2641,11 @@ blockquote:before {
   .tour-details-package-box label {
     position: absolute;
     z-index: 2;
-    top: -1.1rem;
+    top: -35px;
     left: 1rem;
     padding: 2px;
     color: var(--second-color);
-    font-size: 22px;
+    font-size: 18px;
   }
   
   .tour-details-package-box label::before {
@@ -3114,7 +3116,12 @@ blockquote:before {
   padding: 1px;
 }
 
+
+
+
 }
+
+
 
 .subcategory_info {
   background: #f9f9f9;
